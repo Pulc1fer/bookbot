@@ -13,3 +13,13 @@ def get_num_characters(text):
         else:
             characters[char] += 1
     return characters
+
+def sort_on(d):
+    return d["num"]
+
+def sorted_data(char_dict):
+    result = []
+    for char in char_dict:
+        result.append({"char" : char, "num": char_dict[char]})
+    result.sort(reverse=True, key=sort_on)
+    return result
