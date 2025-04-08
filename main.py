@@ -2,7 +2,7 @@ from stats import get_num_words, get_num_characters, sorted_data
 import sys
 
 if len(sys.argv) != 2:
-        print("Usage: python3 main.py <path_to_book>")
+        print("Usage: python3 main.py <books/book_name.txt>")
         sys.exit(1)
 path = sys.argv[1]
 
